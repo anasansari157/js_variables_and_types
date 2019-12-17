@@ -9,21 +9,84 @@
     * [ ] Mul
     * [ ] Div
 
+```js
+let firstNum = Number(prompt("Enter the first number"));
+let secondNum = Number(prompt("Enter the second number"));
+let operation = prompt("Enter the operation: Add / Sub / Mul / Div");
+
+if (operation == "Sub" || operation == "Div") {
+    if (secondNum > firstNum) {
+      alert("Number Two is larger then Number one");
+    }
+    else if (operation == "Sub") {
+      alert(firstNum - secondNum);
+    }
+    else {
+      alert(firstNum / secondNum);
+    }
+}
+
+else if (operation == "Add") {
+  alert(firstNum + secondNum);
+}
+
+else if(operation == "Mul") {
+  alert(firstNum * secondNum);
+}
+else {
+  alert("That's not what you are supposed to do.")
+}
+```
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
 var status = 'single';
+
+if (status == "single") {
+  alert("John is single");
+}
+else {
+  alert("John is married");
+}
 // Your code goes here
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
+let num1 = Number(prompt("Enter the first number"));
+let num2 = Number(prompt("Enter the second number"));
+
+if (num1 < num2) {
+  alert(num2);
+}
+else if (num1 > num2) {
+  alert(num1)
+}
+else {
+  alert("Are you sure they aren't equal?")
+}
+
 // your code goes here
 ```
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
+
+let num1 = Number(prompt("Enter the number"));
+let num2 = Number(prompt("Enter the number"));
+let num3 = Number(prompt("Enter the number"));
+
+let product = num1 * num2 * num3;
+
+if (product < 0) {
+  alert("-");
+}
+else {
+  alert("+");
+}
+ 
 // Your code goes here
 ```
 
@@ -42,7 +105,41 @@ Take a number value from user and alert the message if it matches the conditions
 * [ ] EIGHT, if `number` is equal to 8.
 * [ ] NINE, if `number` is equal to 9.
 * [ ] PLEASE TRY AGAIN, if  is none of the above.
+
 ```js
+let num = Number(prompt("Enter the number"));
+switch (num) {
+  case 1:
+    alert(`ONE`);
+    break;
+  case 2:
+    alert(`TWO`);
+    break;
+  case 3:
+    alert(`THREE`);
+    break;
+  case 4:
+    alert(`FOUR`);
+    break;
+  case 5:
+    alert(`FIVE`);
+    break;
+  case 6:
+    alert(`SIX`);
+    break;
+  case 7:
+    alert(`SEVEN`);
+    break;
+  case 8:
+    alert(`EIGHT`);
+    break;
+  case 9:
+    alert(`NINE`);
+    break;
+  default:
+    alert("PLEASE TRY AGAIN");
+}
+
 // Your code goes here
 ```
 
@@ -57,6 +154,34 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 * [ ] `CD` if `marks` is greater than 40 and less than or equal to 50
 * [ ] `DD` if `marks` is greater than 30 and less than or equal to 40
 * [ ] `FF` if `marks` is less than or equal to 30
+
 ```js
+let marks = Number(prompt("What are your marks ?"));
+switch (marks) {
+  case marks > 90:
+    alert(`AA`);
+    break;
+  case marks > 80 && marks <= 90:
+    alert(`AB`);
+    break;
+  case marks > 70 && marks <= 80:
+    alert(`BB`);
+    break;
+  case marks > 60 && marks <= 70:
+    alert(`BC`);
+    break;
+  case marks > 50 && marks <= 60:
+    alert(`CC`);
+    break;
+  case marks > 40 && marks <= 50:
+    alert(`CD`);
+    break;
+  case marks > 30 && marks <= 40:
+    alert(`DD`);
+    break;
+  case marks < 30:
+    alert(`FF`);
+}
+
 // Your code goes here
 ```

@@ -9,4 +9,3 @@ Implement it using internal and external JavaScript. Use the two folders with na
   1. Write JS inside html file.
   2. Write the JS in an external file and link your html and js.
 
-##
